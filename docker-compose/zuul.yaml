@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: servicio-zuul-server
+  name: servicio-zuul-server
+  labels:
+    app: servicio-zuul-server
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: servicio-zuul-server  
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: servicio-zuul-server
+    spec:
+      containers:
+      - image: pontxo/servicio-zuul-server:v1
+        name: servicio-zuul-server
+        ports:
+        - containerPort: 8090
+        resources: {}
+      restartPolicy: Always
+status: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    app: servicio-zuul-server
+  name: servicio-zuul-server
+spec:
+  ports:
+  - name: "8090"
+    port: 8090
+    targetPort: 8090
+  type: LoadBalancer
+  selector:
+    app: servicio-zuul-server
+status:
+  loadBalancer: {}

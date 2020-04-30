@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: microservicios-rabbitmq38
+  name: microservicios-rabbitmq38
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: microservicios-rabbitmq38
+    spec:
+      containers:
+      - image: rabbitmq:3-management
+        name: microservicios-rabbitmq38
+        ports:
+        - containerPort: 15672
+        - containerPort: 5672
+        resources: {}
+      restartPolicy: Always
+status: {}

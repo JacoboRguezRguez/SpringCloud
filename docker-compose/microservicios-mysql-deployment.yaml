@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: microservicios-mysql
+  name: microservicios-mysql
+  labels:
+    app: microservicios-mysql
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: microservicios-mysql
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: microservicios-mysql
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_DATABASE
+          value: db_spring_cloud
+        - name: MYSQL_ROOT_PASSWORD
+          value: secret
+        image: mysql:latest
+        name: microservicios-mysql
+        ports:
+        - containerPort: 3306
+        resources: {}
+      restartPolicy: Always
+status: {}

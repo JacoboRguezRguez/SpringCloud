@@ -1,0 +1,119 @@
+--- 
+networks: 
+  springcloud: ~
+services: 
+  config-server: 
+    image: "config-server:v1"
+    networks: 
+      - springcloud
+    ports: 
+      - "8888:8888"
+    restart: always
+  microservicios-mysql: 
+    environment: 
+      MYSQL_DATABASE: db_spring_cloud
+      MYSQL_ROOT_PASSWORD: secret
+    image: "mysql:latest"
+    networks: 
+      - springcloud
+    ports: 
+      - "3306:3306"
+    restart: always
+  microservicios-postgres: 
+    environment: 
+      POSTGRES_DB: db_spring_cloud
+      POSTGRES_PASSWORD: secret
+    image: "postgres:latest"
+    networks: 
+      - springcloud
+    ports: 
+      - "5432:5432"
+    restart: always
+  microservicios-rabbitmq38: 
+    image: "rabbitmq:3-management"
+    networks: 
+      - springcloud
+    ports: 
+      - "15672:15672"
+      - "5672:5672"
+    restart: always
+  servicio-eureka-server: 
+    image: "servicio-eureka-server:v1"
+    networks: 
+      - springcloud
+    ports: 
+      - "8761:8761"
+    restart: always
+  servicio-items: 
+    depends_on: 
+      - config-server
+      - servicio-eureka-server
+      - servicio-productos
+    image: "servicio-items:v1"
+    networks: 
+      - springcloud
+    ports: 
+      - "8002:8002"
+      - "8005:8005"
+      - "8007:8007"
+    restart: always
+  servicio-oauth: 
+    depends_on: 
+      - config-server
+      - servicio-eureka-server
+      - servicio-usuarios
+    image: "servicio-oauth:v1"
+    networks: 
+      - springcloud
+    ports: 
+      - "9100:9100"
+    restart: always
+  servicio-productos: 
+    depends_on: 
+      - config-server
+      - servicio-eureka-server
+      - microservicios-mysql
+    image: "servicio-productos:v1"
+    networks: 
+      - springcloud
+    restart: always
+  servicio-usuarios: 
+    depends_on: 
+      - config-server
+      - servicio-eureka-server
+      - microservicios-postgres
+    image: "servicio-usuarios:v1"
+    networks: 
+      - springcloud
+    restart: always
+  servicio-zuul-server: 
+    depends_on: 
+      - config-server
+      - servicio-eureka-server
+      - servicio-productos
+      - servicio-items
+      - servicio-usuarios
+      - servicio-oauth
+    image: "servicio-zuul-server:v1"
+    networks: 
+      - springcloud
+    ports: 
+      - "8090:8090"
+    restart: always
+  zipkin-server: 
+    depends_on: 
+      - microservicios-rabbitmq38
+      - microservicios-mysql
+    environment: 
+      MYSQL_HOST: microservicios-mysql
+      MYSQL_PASS: zipkin
+      MYSQL_USER: zipkin
+      RABBIT_ADDRESSES: "microservicios-rabbitmq38:5672"
+      STORAGE_TYPE: mysql
+    image: "zipkin-server:v1"
+    networks: 
+      - springcloud
+    ports: 
+      - "9411:9411"
+    restart: always
+version: "3.7"

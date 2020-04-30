@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    app: servicio-oauth
+  name: servicio-oauth
+spec:
+  ports:
+  - name: "9100"
+    port: 9100
+    targetPort: 9100
+  type: LoadBalancer
+  selector:
+    app: servicio-oauth
+status:
+  loadBalancer: {}

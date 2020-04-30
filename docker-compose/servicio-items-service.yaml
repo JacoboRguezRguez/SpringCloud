@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: servicio-items
+  name: servicio-items
+spec:
+  ports:
+  - name: "8002"
+    port: 8002
+    targetPort: 8002
+  - name: "8005"
+    port: 8005
+    targetPort: 8005
+  - name: "8007"
+    port: 8007
+    targetPort: 8007
+  selector:
+    io.kompose.service: servicio-items
+status:
+  loadBalancer: {}

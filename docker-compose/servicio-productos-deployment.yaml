@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: servicio-productos
+  name: servicio-productos
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: servicio-productos
+    spec:
+      containers:
+      - image: pontxo/servicio-productos:v1
+        name: servicio-productos
+        resources: {}
+      restartPolicy: Always
+status: {}

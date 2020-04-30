@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: servicio-usuarios
+  name: servicio-usuarios
+  labels:
+    app: servicio-usuarios
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: servicio-usuarios  
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: servicio-usuarios
+    spec:
+      containers:
+      - image: pontxo/servicio-usuarios:v1
+        name: servicio-usuarios
+        ports:
+        - containerPort: 1234
+        resources: {}
+      restartPolicy: Always
+status: {}

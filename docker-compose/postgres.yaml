@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: microservicios-postgres
+  name: microservicios-postgres
+  labels:
+    app: microservicios-postgres
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: microservicios-postgres  
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: microservicios-postgres
+    spec:
+      containers:
+      - env:
+        - name: POSTGRES_DB
+          value: db_spring_cloud
+        - name: POSTGRES_PASSWORD
+          value: secret
+        image: postgres:latest
+        name: microservicios-postgres
+        ports:
+        - containerPort: 5432
+        resources: {}
+      restartPolicy: Always
+status: {}
+
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    app: microservicios-postgres
+  name: microservicios-postgres
+spec:
+  ports:
+  - name: "5432"
+    port: 5432
+    targetPort: 5432
+  selector:
+    app: microservicios-postgres
+status:
+  loadBalancer: {}

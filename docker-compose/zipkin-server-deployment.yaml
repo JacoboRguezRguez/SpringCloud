@@ -1,0 +1,38 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: zipkin-server
+  name: zipkin-server
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: zipkin-server
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_HOST
+          value: microservicios-mysql
+        - name: MYSQL_PASS
+          value: zipkin
+        - name: MYSQL_USER
+          value: zipkin
+        - name: RABBIT_ADDRESSES
+          value: microservicios-rabbitmq38:5672
+        - name: STORAGE_TYPE
+          value: mysql
+        image: pontxo/zipkin-server:v1
+        name: zipkin-server
+        ports:
+        - containerPort: 9411
+        resources: {}
+      restartPolicy: Always
+status: {}

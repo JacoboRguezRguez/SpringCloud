@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: servicio-oauth
+  labels:
+    io.kompose.service: servicio-oauth
+  name: servicio-oauth
+  labels:
+    app: servicio-oauth
+spec:
+  replicas: 1
+  strategy: {}
+  selector:
+    matchLabels:
+      app: servicio-oauth  
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: servicio-oauth
+    spec:
+      containers:
+      - image: pontxo/servicio-oauth:v1
+        name: servicio-oauth
+        ports:
+        - containerPort: 9100
+        resources: {}
+      restartPolicy: Always
+status: {}
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.7.0 (HEAD)
+  creationTimestamp: null
+  labels:
+    app: servicio-oauth
+  name: servicio-oauth
+spec:
+  ports:
+  - name: "9100"
+    port: 9100
+    targetPort: 9100
+  type: LoadBalancer
+  selector:
+    app: servicio-oauth
+status:
+  loadBalancer: {}
