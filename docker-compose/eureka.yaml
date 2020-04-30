@@ -5,17 +5,17 @@ metadata:
 data:
   # if you want to deploy n instances of eureka cluster,
   # you should set eureka_service_address: http://eureka-0.eureka:8761/eureka,...,http://eureka-(n-1).eureka:8761/eureka
-  eureka_service_address: http://servicio-eureka-server:8761/eureka
+  eureka_service_address: http://servicio-eureka-server-0.eureka:8761/eureka
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: eureka-lb
   labels:
-    app: eureka
+    app: servicio-eureka-server
 spec:
   selector:
-    app: eureka
+    app: servicio-eureka-server
   type: LoadBalancer
   ports:
     - port: 80
@@ -24,35 +24,35 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: eureka
+  name: servicio-eureka-server
   labels:
-    app: eureka
+    app: servicio-eureka-server
 spec:
   clusterIP: None
   ports:
     - port: 8761
-      name: eureka
+      name: servicio-eureka-server
   selector:
-    app: eureka
+    app: servicio-eureka-server
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: eureka
+  name: servicio-eureka-server
 spec:
-  serviceName: 'eureka'
+  serviceName: 'servicio-eureka-server'
   # n instances
   replicas: 1
   selector:
     matchLabels:
-      app: eureka
+      app: servicio-eureka-server
   template:
     metadata:
       labels:
-        app: eureka
+        app: servicio-eureka-server
     spec:
       containers:
-        - name: eureka
+        - name: servicio-eureka-server
           image: pontxo/servicio-eureka-server:v1
           ports:
             - containerPort: 8761

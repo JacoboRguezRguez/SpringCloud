@@ -9941,3 +9941,101 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2020-04-30 04:50:31,674 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2020-04-30 05:25:26,288 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2020-04-30 05:37:52,278 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-04-30 06:05:55,901 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-04-30 06:13:27,072 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-04-30 06:13:45,867 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:45,871 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:45,882 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-04-30 06:13:45,885 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:45,885 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-commons/src/test/resources
+2020-04-30 06:13:47,611 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:47,611 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:47,613 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-04-30 06:13:47,615 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:47,615 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-config-server/src/test/resources
+2020-04-30 06:13:48,851 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:48,852 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:48,852 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-04-30 06:13:48,855 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:48,855 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-eureka-server/src/test/resources
+2020-04-30 06:13:50,479 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/springboot-servicio-commons: com.bdi.springboot.app.commons:springboot-servicio-commons:0.0.1-SNAPSHOT with classifier  to /springboot-servicio-commons/target/classes
+2020-04-30 06:13:50,496 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:50,497 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:50,498 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:50,504 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:50,504 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-item/src/test/resources
+2020-04-30 06:13:51,586 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/springboot-servicio-commons: com.bdi.springboot.app.commons:springboot-servicio-commons:0.0.1-SNAPSHOT with classifier  to /springboot-servicio-commons/target/classes
+2020-04-30 06:13:51,612 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:51,613 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:51,614 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-04-30 06:13:51,622 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:51,622 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-productos/src/test/resources
+2020-04-30 06:13:53,343 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:53,344 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:53,344 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-04-30 06:13:53,346 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:53,346 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-usuarios-commons/src/test/resources
+2020-04-30 06:13:56,533 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/springboot-servicio-usuarios-commons: com.formacionbdi.springboot.app.usuarios.commons:springboot-servicio-usuarios-commons:0.0.1-SNAPSHOT with classifier  to /springboot-servicio-usuarios-commons/target/classes
+2020-04-30 06:13:56,584 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:56,584 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:56,584 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-04-30 06:13:56,587 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:56,587 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-usuarios/src/test/resources
+2020-04-30 06:13:58,763 [Worker-0: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/springboot-servicio-usuarios-commons: com.formacionbdi.springboot.app.usuarios.commons:springboot-servicio-usuarios-commons:0.0.1-SNAPSHOT with classifier  to /springboot-servicio-usuarios-commons/target/classes
+2020-04-30 06:13:58,815 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:58,815 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:58,815 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:13:58,819 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:13:58,820 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-oauth/src/test/resources
+2020-04-30 06:14:00,074 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:14:00,074 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:14:00,075 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:14:00,077 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:14:00,077 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-zuul-server/src/test/resources
+2020-04-30 06:14:11,140 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:14:11,142 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:14:11,143 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-04-30 06:14:11,144 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:14:11,145 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-zuul-server/src/test/resources
+2020-04-30 06:14:51,564 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2020-04-30 06:14:51,785 [Worker-5: Launching springboot-servicio-zuul-server] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/osboxes/projects/SpringCloud/springboot-servicio-zuul-server
+2020-04-30 06:14:51,786 [Worker-5: Launching springboot-servicio-zuul-server] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B clean package -DskipTests -Dstyle.color=always
+2020-04-30 06:15:12,807 [Worker-2: Launching springboot-servicio-eureka-server] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/osboxes/projects/SpringCloud/springboot-servicio-eureka-server
+2020-04-30 06:15:12,807 [Worker-2: Launching springboot-servicio-eureka-server] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B clean package -Dstyle.color=always
+2020-04-30 06:15:13,986 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:15:14,001 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:15:14,002 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:15:14,007 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:15:14,007 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-zuul-server/src/test/resources
+2020-04-30 06:21:22,794 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-04-30 06:28:28,866 [Worker-9: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/springboot-servicio-usuarios-commons: com.formacionbdi.springboot.app.usuarios.commons:springboot-servicio-usuarios-commons:0.0.1-SNAPSHOT with classifier  to /springboot-servicio-usuarios-commons/target/classes
+2020-04-30 06:28:29,229 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:28:29,233 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:28:29,251 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-04-30 06:28:29,255 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:28:29,255 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-usuarios/src/test/resources
+2020-04-30 06:30:44,159 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:30:44,167 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:30:44,168 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-04-30 06:30:44,169 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:30:44,170 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-usuarios/src/test/resources
+2020-04-30 06:31:01,969 [Worker-11: Building workspace] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/springboot-servicio-usuarios-commons: com.formacionbdi.springboot.app.usuarios.commons:springboot-servicio-usuarios-commons:0.0.1-SNAPSHOT with classifier  to /springboot-servicio-usuarios-commons/target/classes
+2020-04-30 06:31:02,034 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:31:02,034 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:31:02,035 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:31:02,037 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:31:02,037 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-oauth/src/test/resources
+2020-04-30 06:31:19,804 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2020-04-30 06:31:19,964 [Worker-10: Launching springboot-servicio-oauth] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/osboxes/projects/SpringCloud/springboot-servicio-oauth
+2020-04-30 06:31:19,966 [Worker-10: Launching springboot-servicio-oauth] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B clean package -DskipTests -Dstyle.color=always
+2020-04-30 06:31:26,726 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2020-04-30 06:31:26,800 [Worker-11: Launching springboot-servicio-usuarios] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/osboxes/projects/SpringCloud/springboot-servicio-usuarios
+2020-04-30 06:31:26,800 [Worker-11: Launching springboot-servicio-usuarios] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B clean package -DskipTests -Dstyle.color=always
+2020-04-30 06:31:27,984 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:31:27,986 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:31:27,987 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-04-30 06:31:27,995 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-04-30 06:31:27,995 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/osboxes/projects/SpringCloud/springboot-servicio-oauth/src/test/resources
+2020-04-30 06:41:25,167 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-04-30 06:54:14,456 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-04-30 06:57:00,145 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
